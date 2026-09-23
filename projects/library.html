@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madison Public Library — Mobile Experience Redesign — Chelsie Lin</title>
+<meta name="description" content="Redesigning the end-to-end library experience from book discovery to borrowing and management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="nav is-scrolled" id="nav">
+  <a href="../index.html" class="nav__logo">Chelsie Lin</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="../resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="case-hero">
+    <a href="../index.html#projects" class="case-hero__back">&larr; All projects</a>
+    <h1>Madison Public Library</h1>
+    <p class="lede">Redesigning the end-to-end library experience from book discovery to borrowing and management.</p>
+    <dl class="case-meta">
+      <div><dt>Role</dt><dd>UX Designer &amp; Product Designer</dd></div>
+      <div><dt>Project</dt><dd>UW&ndash;Madison UX Design Project</dd></div>
+      <div><dt>Scope</dt><dd>UX Research, Product Strategy, Information Architecture, Interaction Design, Prototyping, Usability Testing</dd></div>
+      <div><dt>Methods</dt><dd>Problem framing, storyboarding, task flows, paper prototyping, user testing, wireframing</dd></div>
+    </dl>
+    <div class="case-hero__media"><div class="case-img">+ add app screens</div></div>
+  </section>
+
+  <div class="impact-strip">
+    <div><span class="num">3</span><span class="label">User journeys redesigned</span></div>
+    <div><span class="num">2</span><span class="label">Users in usability testing</span></div>
+    <div><span class="num">1</span><span class="label">Unified mobile experience</span></div>
+    <div><span class="num">1st</span><span class="label">Place, UX design project</span></div>
+  </div>
+
+  <div class="case-body">
+
+    <div class="case-section">
+      <p class="case-section__num">01</p>
+      <h2>Background — Turning a fragmented website into a simpler mobile journey</h2>
+      <p>The Madison Public Library website provides access to books, events, and community resources, but its existing experience created friction around common tasks. Users struggled to find books, understand event registration, and navigate unclear categories &mdash; and basic library activities were scattered across the site rather than organized around what people were actually trying to do.</p>
+      <p class="pull-quote">How might we make borrowing, picking up, renewing, and returning books easier while helping users discover more of what the library offers?</p>
+      <p>The goal wasn't to shrink the website for mobile. It was to redesign the entire library journey around user tasks.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">02</p>
+      <h2>The problem — Borrowing should feel like one journey, not several disconnected tasks</h2>
+      <p>A library experience doesn't end when someone finds a book. Users need to understand whether it's available, which library has it, where to pick it up, when it's due, and whether they can renew it. Search, availability, account management and library information weren't presented as one continuous workflow.</p>
+      <p class="pull-quote">How can the product support the complete lifecycle of borrowing a book — from discovery to return?</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">03</p>
+      <h2>My role</h2>
+      <p>As the UX and Product Designer, I owned the redesign from early problem framing through the final interactive experience: identifying usability and navigation problems, defining the core product problem, mapping the end-to-end borrowing journey, creating storyboards and task flows, designing paper prototypes, conducting usability testing, and iterating information architecture, wireframes and final UI.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">04</p>
+      <h2>Design principles — Design around intent, not organizational structure</h2>
+      <div class="card-list">
+        <div><h4>01. Personalized library experience</h4><p>Help users discover relevant books without needing to know exactly what to search for.</p></div>
+        <div><h4>02. Easier borrowing &amp; management</h4><p>Connect search, availability, pickup, history and renewal into one clear workflow.</p></div>
+        <div><h4>03. Library events &amp; services</h4><p>Make the broader value of the public library easier to discover.</p></div>
+      </div>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">05</p>
+      <h2>Mapping the user journey</h2>
+      <p>Before designing screens, I designed the journey &mdash; storyboarding a scenario where a user needs a book, discovers it's available at another location, chooses a pickup, and later tracks or returns it. This exposed a key insight: book discovery and book management shouldn't be treated as separate experiences. They are different moments in the same journey. From this I mapped three task flows.</p>
+      <h3>Flow 01 &mdash; Search &amp; borrow</h3>
+      <div class="flow"><span>Home</span><em>&rarr;</em><span>Search</span><em>&rarr;</em><span>Results</span><em>&rarr;</em><span>Book details</span><em>&rarr;</em><span>Sign in</span><em>&rarr;</em><span>Select pickup</span><em>&rarr;</em><span>Confirmation</span></div>
+      <h3>Flow 02 &mdash; Personalized discovery</h3>
+      <div class="flow"><span>Home</span><em>&rarr;</em><span>Sign in</span><em>&rarr;</em><span>Profile</span><em>&rarr;</em><span>Recommendations</span><em>&rarr;</em><span>Book details</span><em>&rarr;</em><span>Borrow</span></div>
+      <h3>Flow 03 &mdash; Borrowing history &amp; tracking</h3>
+      <div class="flow"><span>Home</span><em>&rarr;</em><span>Sign in</span><em>&rarr;</em><span>Dashboard</span><em>&rarr;</em><span>Borrowing history</span><em>&rarr;</em><span>Book details</span></div>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">06</p>
+      <h2>Prototype &amp; testing — Testing the structure before polishing the interface</h2>
+      <p>Before high-fidelity UI, I built a paper prototype to test whether the information architecture and task flows made sense, asking users to: search for and borrow a book, borrow through personalized recommendations, and find and track borrowing information. This surfaced structural problems early, before time was spent polishing the interface.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">07</p>
+      <h2>What I learned — A feature can exist and still be effectively invisible</h2>
+      <p>Testing revealed an important distinction between functionality and discoverability. Most screens were understandable, but users struggled with the Personal Page &mdash; not because features like Recommended Books and Book Tracking were missing, but because the labels and hierarchy made them hard to find.</p>
+      <p class="pull-quote">Would a user know where to look for it without being taught?</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">08</p>
+      <h2>Navigation matters more than expected</h2>
+      <p>On the Book Details screen, users expected Holdings and Location to expose relevant library and location information, and some exited the experience instead of using the intended Back navigation. These behaviors pointed to the product needing stronger information scent, navigation hierarchy, interaction consistency and visual hierarchy &mdash; usability often breaks not from one major missing feature, but from several small moments of uncertainty.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">09</p>
+      <h2>Key features</h2>
+      <div class="card-list">
+        <div><h4>Unified book search</h4><p>A mobile-first search that surfaces the information users need before borrowing.</p></div>
+        <div><h4>Availability &amp; pickup</h4><p>Book details connect discovery directly to fulfillment &mdash; not just "it exists," but "how do I get it."</p></div>
+        <div><h4>Personalized recommendations</h4><p>A second discovery model alongside search, for "help me find something I might like."</p></div>
+        <div><h4>Personal library dashboard</h4><p>Turns the account area into a task-oriented hub instead of a list of settings.</p></div>
+        <div><h4>Borrowing history &amp; tracking</h4><p>Extends the product beyond checkout into ongoing book management.</p></div>
+      </div>
+      <div class="case-img">+ add key screen mockups</div>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">10</p>
+      <h2>From paper to product</h2>
+      <div class="flow"><span>Problem definition</span><em>&rarr;</em><span>Brainstorming</span><em>&rarr;</em><span>Storyboard</span><em>&rarr;</em><span>Task flows</span><em>&rarr;</em><span>Paper prototype</span><em>&rarr;</em><span>User testing</span><em>&rarr;</em><span>Wireframes</span><em>&rarr;</em><span>Final UI</span></div>
+      <p>The screen design process refined both the interface and the underlying workflow, rather than treating visual design as a final layer added after product decisions. The final prototype preserved all three core journeys throughout.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">11</p>
+      <h2>Outcomes</h2>
+      <p>Testing validated the overall task structure while revealing navigation and labeling issues that directly informed the next design iteration. Users were generally able to navigate the main experience, while testing exposed specific discoverability problems around recommendations, tracking, and the Personal Page.</p>
+    </div>
+
+  </div>
+
+  <div class="reflection">
+    <h2>Reflection — Good UX is often about removing uncertainty</h2>
+    <p>At first, I focused on making the library experience more convenient by bringing key functions into a mobile app. Usability testing showed convenience isn't simply about fewer screens or more features &mdash; users need to understand where they are, what they can do, and what happens next.</p>
+    <ol>
+      <li><strong>Design journeys, not isolated screens.</strong> Search, borrowing, pickup and management are stages of the same user goal.</li>
+      <li><strong>Test structure before visual polish.</strong> Paper prototypes surfaced navigation problems before they became expensive decisions.</li>
+      <li><strong>Use user behavior to challenge design assumptions.</strong> When users navigated differently than expected, the fix was the interface, not teaching the user.</li>
+    </ol>
+  </div>
+
+  <div class="case-nav-next">
+    <span>Next case study</span>
+    <a href="ascenzi.html">Ascenzi &amp; Associates &rarr;</a>
+  </div>
+
+</main>
+
+<footer class="footer"><span>&copy; 2026 Chelsie Lin</span></footer>
+<script src="../script.js"></script>
+</body>
+</html>

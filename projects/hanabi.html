@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HANABI — Travel Planning Platform — Chelsie Lin</title>
+<meta name="description" content="Designing and building an end-to-end travel planner using React, Firebase, and Google Maps APIs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="nav is-scrolled" id="nav">
+  <a href="../index.html" class="nav__logo">Chelsie Lin</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="../resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="case-hero">
+    <a href="../index.html#projects" class="case-hero__back">&larr; All projects</a>
+    <h1>HANABI — Travel Planning Platform</h1>
+    <p class="lede">Designing and building an end-to-end travel planner using React, Firebase, and Google Maps APIs.</p>
+    <dl class="case-meta">
+      <div><dt>Role</dt><dd>Product Designer &amp; Front-End Developer</dd></div>
+      <div><dt>Duration</dt><dd>5 weeks &middot; Individual project</dd></div>
+      <div><dt>Technology</dt><dd>JavaScript, React, Firebase, Google Maps API, Responsive Web Design</dd></div>
+    </dl>
+    <div class="case-hero__media"><div class="case-img">+ add product screenshots</div></div>
+  </section>
+
+  <div class="case-body">
+
+    <div class="case-section">
+      <p class="case-section__num">01</p>
+      <h2>The problem</h2>
+      <p>Travel planning often requires switching between multiple tools:</p>
+      <div class="flow"><span>Search</span><em>&rarr;</em><span>Maps</span><em>&rarr;</em><span>Saved places</span><em>&rarr;</em><span>Articles</span><em>&rarr;</em><span>Notes</span><em>&rarr;</em><span>Itinerary</span></div>
+      <p>I wanted to explore whether these fragmented tasks could be combined into one experience, so I designed and developed HANABI as an end-to-end travel planning platform where users could discover locations, save places, and build itineraries without constantly switching apps.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">02</p>
+      <h2>From idea to working product</h2>
+      <p>I owned the project end to end: defining the core travel-planning problem and scope, designing a single-page planning experience around maps and itinerary building, building the interface in JavaScript and React, integrating Google Maps for location search and visualization, using Firebase to persist user-generated travel data, and shipping a working web product from scratch within five weeks.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">03</p>
+      <h2>Key features</h2>
+      <div class="card-list">
+        <div><h4>Location search</h4><p>Search destinations and visualize results directly on the map.</p></div>
+        <div><h4>Saved places</h4><p>Save interesting destinations and retrieve them later.</p></div>
+        <div><h4>Map-based discovery</h4><p>Explore locations spatially instead of relying entirely on text search.</p></div>
+        <div><h4>Trip builder</h4><p>Create trips and organize selected locations into daily itineraries.</p></div>
+        <div><h4>Travel content</h4><p>Connect travel articles with saved landmarks, turning inspiration into planning.</p></div>
+        <div><h4>Google authentication</h4><p>Securely access personalized travel information.</p></div>
+      </div>
+      <div class="case-img">+ add itinerary / map UI screenshot</div>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">04</p>
+      <h2>Technical decisions</h2>
+      <p>Building HANABI taught me how product decisions translate directly into engineering constraints. I worked with React for component-based UI, React Hooks for state management, Firebase/Firestore for persistent user data, the Google Maps API for search and location rendering, Google Authentication for account access, and responsive design for desktop and mobile. Instead of handing requirements to an engineer, I had to make the tradeoffs myself.</p>
+    </div>
+
+  </div>
+
+  <div class="reflection">
+    <h2>Reflection — Building it myself changed how I write requirements</h2>
+    <p>HANABI changed how I work with engineers as a Product Manager. Building a product myself taught me that even a seemingly small feature can involve API limitations, state management, data structures, edge cases, and dependencies &mdash; and that experience helps me write more realistic requirements, ask better technical questions, and understand the tradeoffs behind engineering estimates.</p>
+  </div>
+
+  <div class="case-nav-next">
+    <span>Next case study</span>
+    <a href="mental-health.html">AI Mental Health Research &rarr;</a>
+  </div>
+
+</main>
+
+<footer class="footer"><span>&copy; 2026 Chelsie Lin</span></footer>
+<script src="../script.js"></script>
+</body>
+</html>

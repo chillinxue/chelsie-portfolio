@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STYLiSH — E-commerce Platform — Chelsie Lin</title>
+<meta name="description" content="Building a responsive e-commerce experience from product discovery to checkout.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="nav is-scrolled" id="nav">
+  <a href="../index.html" class="nav__logo">Chelsie Lin</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="../resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="case-hero">
+    <a href="../index.html#projects" class="case-hero__back">&larr; All projects</a>
+    <h1>STYLiSH — E-commerce Platform</h1>
+    <p class="lede">Building a responsive e-commerce experience from product discovery to checkout.</p>
+    <dl class="case-meta">
+      <div><dt>Role</dt><dd>Front-End Developer &amp; UX Designer</dd></div>
+      <div><dt>Scope</dt><dd>React, REST APIs, Responsive Design, E-commerce UX</dd></div>
+    </dl>
+    <div class="case-hero__media"><div class="case-img">+ add product/UI screenshots</div></div>
+  </section>
+
+  <div class="case-body">
+
+    <div class="case-section">
+      <p class="case-section__num">01</p>
+      <h2>Background</h2>
+      <p>STYLiSH is a responsive e-commerce platform designed to support the complete shopping journey &mdash; from browsing and product discovery to account management and checkout. The project challenged me to think beyond individual screens and build a scalable front-end experience that connects user interaction, application state, backend data, and responsive behavior.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">02</p>
+      <h2>The challenge</h2>
+      <p>E-commerce interfaces look simple until all of their states are considered. A single product experience needs to account for:</p>
+      <div class="flow"><span>Product data</span><em>&rarr;</em><span>Variants</span><em>&rarr;</em><span>Inventory</span><em>&rarr;</em><span>Cart state</span><em>&rarr;</em><span>Authentication</span><em>&rarr;</em><span>Checkout</span></div>
+      <p>At the same time, the experience had to remain intuitive across desktop and mobile. My challenge was translating these interconnected requirements into a usable, maintainable front-end architecture.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">03</p>
+      <h2>Development</h2>
+      <p>I built the product using JavaScript and React, integrating REST APIs to dynamically retrieve and render product information:</p>
+      <div class="card-list">
+        <div><h4>Product discovery</h4><p>Responsive product browsing and category navigation.</p></div>
+        <div><h4>Product details</h4><p>Dynamic product information and purchasing options.</p></div>
+        <div><h4>Shopping &amp; membership</h4><p>Account functionality supporting history, discounts, and user-specific experiences.</p></div>
+        <div><h4>Responsive UX</h4><p>Layouts optimized across desktop and mobile environments.</p></div>
+      </div>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">04</p>
+      <h2>Extended commerce experiences</h2>
+      <p>I also explored how commerce could move beyond a traditional product catalog: a real-time customer chat channel between shoppers and merchants, a live-commerce concept for livestream shopping with simultaneous seller communication, and real-time product ranking built around dynamically changing sales information. These helped me think about e-commerce not only as a transaction funnel, but as a combination of content, community, discovery, and conversion.</p>
+      <div class="case-img">+ add checkout / cart screenshot</div>
+    </div>
+
+  </div>
+
+  <div class="reflection">
+    <h2>Reflection — Bridging product and engineering</h2>
+    <p>STYLiSH helped bridge my product and engineering experience. Building it myself gave me a stronger understanding of how front-end architecture, API design, responsive behavior, and UX decisions influence one another &mdash; a technical foundation that later became valuable in my PM work, because I can communicate product requirements in a way that considers both user experience and implementation complexity.</p>
+  </div>
+
+  <div class="case-nav-next">
+    <span>Back to start</span>
+    <a href="line-bank.html">LINE Bank AI Chatbot &rarr;</a>
+  </div>
+
+</main>
+
+<footer class="footer"><span>&copy; 2026 Chelsie Lin</span></footer>
+<script src="../script.js"></script>
+</body>
+</html>

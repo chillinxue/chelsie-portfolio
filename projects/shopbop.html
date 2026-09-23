@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon Shopbop — Bop &amp; Browse — Chelsie Lin</title>
+<meta name="description" content="Reimagining fashion discovery through a personalized, swipe-based shopping experience for Amazon Shopbop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="nav is-scrolled" id="nav">
+  <a href="../index.html" class="nav__logo">Chelsie Lin</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="../resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="case-hero">
+    <a href="../index.html#projects" class="case-hero__back">&larr; All projects</a>
+    <h1>Amazon Shopbop — Bop &amp; Browse</h1>
+    <p class="lede">Reimagining fashion discovery through a personalized, swipe-based shopping experience.</p>
+    <dl class="case-meta">
+      <div><dt>Role</dt><dd>Product &amp; UX Lead</dd></div>
+      <div><dt>Collaboration</dt><dd>UW&ndash;Madison &times; Amazon Shopbop</dd></div>
+      <div><dt>Scope</dt><dd>Product Strategy, User Research, UX Design, Prototyping, Agile, Personalization</dd></div>
+      <div><dt>Methods</dt><dd>Competitive analysis, user interviews, Google Design Sprint, usability testing, Figma, Jira</dd></div>
+    </dl>
+    <div class="case-hero__media"><div class="case-img">+ add prototype screens</div></div>
+  </section>
+
+  <div class="impact-strip">
+    <div><span class="num">11</span><span class="label">Users tested</span></div>
+    <div><span class="num">5</span><span class="label">Research themes</span></div>
+    <div><span class="num">1</span><span class="label">Hypothesis validated</span></div>
+    <div><span class="num">0&rarr;1</span><span class="label">Concept to prototype</span></div>
+  </div>
+
+  <div class="case-body">
+
+    <div class="case-section">
+      <p class="case-section__num">01</p>
+      <h2>Background — Making fashion discovery feel less overwhelming</h2>
+      <p>Shopbop, an Amazon company, wanted to explore more social and interactive shopping experiences that could increase engagement and strengthen product discovery. Working with Amazon Shopbop engineering mentors, our team explored a new way for customers to discover fashion based on their personal taste.</p>
+      <p class="pull-quote">What if discovering an outfit felt more like expressing your taste than searching through a catalog?</p>
+      <p>Instead of asking users to browse hundreds of products, we designed <strong>Bop &amp; Browse</strong>, a swipe-based experience where customers quickly react to clothing and outfits while the product learns their preferences.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">02</p>
+      <h2>The problem — Too many choices, not enough confidence</h2>
+      <p>Our research showed that fashion shoppers weren't struggling with a lack of options &mdash; they were struggling with too many. Users described endless scrolling as overwhelming, found it hard to imagine how pieces would work together as an outfit, and wanted recommendations that reflected their occasion, budget and style rather than generic "similar products."</p>
+      <p class="pull-quote">How might we reduce decision fatigue while helping shoppers discover complete outfits that feel personal, inspiring, and easy to act on?</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">03</p>
+      <h2>My role</h2>
+      <p>As Product &amp; UX Lead, I helped drive the project from problem definition through research, prototyping, validation, and product recommendations &mdash; contributing to product requirements and feature prioritization, competitive and customer research, user journey and information architecture, sprint planning and backlog management, wireframing and interactive prototyping, user interviews and usability testing, and translating findings into roadmap recommendations.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">04</p>
+      <h2>Research &amp; problem framing</h2>
+      <p>We focused on fashion-conscious online shoppers who wanted to look put-together quickly without spending significant time assembling outfits themselves. Our users valued:</p>
+      <div class="card-list">
+        <div><h4>Speed</h4><p>Find relevant outfits without endless scrolling.</p></div>
+        <div><h4>Personalization</h4><p>Recommendations should reflect their actual taste.</p></div>
+        <div><h4>Confidence</h4><p>Understand how individual pieces work together.</p></div>
+        <div><h4>Context</h4><p>Shop based on occasions such as work, travel, dates or events.</p></div>
+        <div><h4>Discovery</h4><p>Still encounter new styles, not just past purchases.</p></div>
+      </div>
+      <p class="pull-quote">Personalization shouldn't only predict what users already like. It should help them discover what they might like next.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">05</p>
+      <h2>Product hypothesis</h2>
+      <p>Rather than starting with a large feature set, we identified one key assumption to test: <em>users will prefer curated, swipe-based fashion discovery over endless scrolling, while still wanting control over individual items within an outfit.</em> The swipe interaction reduced the effort required to communicate preference, and every interaction created a lightweight signal to improve recommendations.</p>
+      <div class="flow"><span>Browse</span><em>&rarr;</em><span>React</span><em>&rarr;</em><span>Learn</span><em>&rarr;</em><span>Personalize</span><em>&rarr;</em><span>Discover</span></div>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">06</p>
+      <h2>Design process — From an open-ended idea to a testable product</h2>
+      <p>We followed an iterative process rather than jumping into high-fidelity design: understanding the challenge and existing behavior, defining a narrower problem, ideating across feeds, grids, filters and swipe interactions, prototyping around the riskiest assumption, testing with 11 users across different ages, professions and locations, and iterating the backlog directly from findings.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">07</p>
+      <h2>What we learned — The concept worked, but users wanted more control</h2>
+      <p>Testing validated the core idea: users found swipe-based discovery more fun and engaging than endless browsing, and liked teaching the system what they liked. But research also challenged some assumptions &mdash; users wanted:</p>
+      <div class="card-list">
+        <div><h4>Bigger visuals</h4><p>Fashion is visual; imagery needed to dominate the experience.</p></div>
+        <div><h4>Item-level control</h4><p>Users might like a jacket but dislike the skirt in the same outfit.</p></div>
+        <div><h4>Occasion-based discovery</h4><p>"Wedding guest" or "travel" was more useful than abstract categories.</p></div>
+        <div><h4>Flexible personalization</h4><p>Worried that one dislike might permanently remove a whole style.</p></div>
+        <div><h4>Clearer onboarding</h4><p>Too many preference questions made it feel like work.</p></div>
+      </div>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">08</p>
+      <h2>Key features</h2>
+      <div class="card-list">
+        <div><h4>Swipe-based discovery</h4><p>Like or Nope on individual pieces, generating explicit preference signals.</p></div>
+        <div><h4>Preference onboarding</h4><p>Users choose interests directly instead of relying only on purchase history.</p></div>
+        <div><h4>Smart filters</h4><p>Narrow discovery by occasion, season, style, brand, fit and price.</p></div>
+        <div><h4>Personal closet</h4><p>Liked items are saved into a persistent, revisitable space.</p></div>
+        <div><h4>Outfit match</h4><p>Saved preferences combine into complete outfit recommendations.</p></div>
+        <div><h4>Item-level control</h4><p>"I like this top, but not those shoes" &mdash; nuance beyond all-or-nothing outfits.</p></div>
+      </div>
+      <div class="case-img">+ add key feature screens</div>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">09</p>
+      <h2>Building through Agile sprints</h2>
+      <p>The project was managed through iterative Agile sprints in Jira. Each sprint began with backlog review, acceptance criteria, and dependency mapping; weekly stand-ups surfaced blockers, and user interviews and prototype testing were built into the cycle so findings could immediately shape the next backlog.</p>
+      <div class="flow"><span>Research</span><em>&rarr;</em><span>Build</span><em>&rarr;</em><span>Test</span><em>&rarr;</em><span>Learn</span><em>&rarr;</em><span>Prioritize</span><em>&rarr;</em><span>Iterate</span></div>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">10</p>
+      <h2>Product opportunities</h2>
+      <p>Swipe behavior wasn't only useful for individual recommendations. Aggregated preference signals could inform merchandising (trending products and combinations), marketing and styling (emerging preference clusters), and personalization across home feeds, email and push &mdash; making the concept a feedback loop between customer behavior and Shopbop's broader recommendation ecosystem.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">11</p>
+      <h2>Outcomes</h2>
+      <p>Because this was an academic collaboration rather than a production launch, I'm showing the actual validated outcomes rather than inventing conversion or revenue metrics.</p>
+      <div class="card-list" style="grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); display:grid;">
+        <div><h4>11</h4><p>Users in first-round prototype testing</p></div>
+        <div><h4>5</h4><p>Major recurring research themes identified</p></div>
+        <div><h4>1</h4><p>Core discovery hypothesis validated</p></div>
+        <div><h4>Multiple</h4><p>Design iterations driven directly by user feedback</p></div>
+      </div>
+      <p>The strongest qualitative result: users found curated swipe-based discovery engaging and useful for reducing choice overload.</p>
+    </div>
+
+  </div>
+
+  <div class="reflection">
+    <h2>Reflection — The best personalization gives users control</h2>
+    <p>I initially thought the core value would be making fashion discovery faster. Research showed something more interesting: people want personalization, but they also want to understand and influence how it works. This project reinforced three principles:</p>
+    <ol>
+      <li><strong>Validate the riskiest assumption first.</strong> A polished solution is useless if the underlying behavior isn't real.</li>
+      <li><strong>Behavior is often more valuable than stated preference.</strong> Every interaction can become a signal for the next experience.</li>
+      <li><strong>Personalization should adapt, not restrict.</strong> The best systems help users discover something new while keeping them in control.</li>
+    </ol>
+  </div>
+
+  <div class="case-nav-next">
+    <span>Next case study</span>
+    <a href="library.html">Madison Public Library &rarr;</a>
+  </div>
+
+</main>
+
+<footer class="footer"><span>&copy; 2026 Chelsie Lin</span></footer>
+<script src="../script.js"></script>
+</body>
+</html>

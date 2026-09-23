@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LINE Bank AI Chatbot — Chelsie Lin</title>
+<meta name="description" content="Building a trustworthy AI banking experience from 0→1 for 6M+ users at LINE Bank.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="nav is-scrolled" id="nav">
+  <a href="../index.html" class="nav__logo">Chelsie Lin</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="../resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="case-hero">
+    <a href="../index.html#projects" class="case-hero__back">&larr; All projects</a>
+    <h1>LINE Bank AI Chatbot</h1>
+    <p class="lede">Building a trustworthy AI banking experience from 0&rarr;1 for millions of users.</p>
+    <dl class="case-meta">
+      <div><dt>Role</dt><dd>AI Product Manager &middot; UX Designer</dd></div>
+      <div><dt>Duration</dt><dd>Jan 2020 &ndash; Apr 2022</dd></div>
+      <div><dt>Scope</dt><dd>AI/NLU, Product Strategy, UX, Model Quality, API Integration, SQL, Experimentation</dd></div>
+    </dl>
+    <div class="case-hero__media"><div class="case-img">+ add chatbot UI / persona screens</div></div>
+  </section>
+
+  <div class="impact-strip">
+    <div><span class="num">6M+</span><span class="label">Users</span></div>
+    <div><span class="num">5M+</span><span class="label">Conversations</span></div>
+    <div><span class="num">90%</span><span class="label">NLU accuracy</span></div>
+    <div><span class="num">60%</span><span class="label">Fewer support calls</span></div>
+    <div><span class="num">$100K</span><span class="label">Annual savings</span></div>
+  </div>
+
+  <div class="case-body">
+
+    <div class="case-section">
+      <p class="case-section__num">01</p>
+      <h2>Background — Making digital banking feel accessible without a branch</h2>
+      <p>LINE Bank was one of Taiwan's first digital-only banks. Without physical branches, customers needed a fast and reliable way to understand financial products, solve account issues, and complete banking tasks digitally.</p>
+      <p>I joined the AI team to build LINE Bank's customer-facing chatbot from 0&rarr;1, owning the experience from early product definition and conversation architecture through AI quality optimization, testing, and launch.</p>
+      <p>The goal was not simply to answer questions. We wanted to create an AI experience users could understand, trust, and actually use to complete banking tasks.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">02</p>
+      <h2>The problem — How do we make users trust an AI for banking?</h2>
+      <p>Early research revealed several challenges with existing financial chatbots: financial language was accurate but hard to understand, users asked the same question in very different ways, incorrect answers quickly eroded trust, and most chatbots stopped at providing information instead of helping users complete the next step.</p>
+      <p class="pull-quote">How might we make an AI chatbot accurate enough to trust, simple enough to understand, and useful enough to reduce dependence on customer service?</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">03</p>
+      <h2>My role</h2>
+      <p>I owned major parts of the chatbot product lifecycle, working across AI engineering, backend engineering, UX, customer service, legal, information security, marketing, and LINE Korea HQ. That included defining product requirements and conversation architecture, designing intent/entity structures and response flows, labeling and evaluating AI outputs, analyzing customer behavior with SQL, designing personas and interaction patterns, coordinating API integrations, and planning SIT, UAT and stress testing.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">04</p>
+      <h2>Research &amp; product strategy — Understanding how users actually ask questions</h2>
+      <p>Instead of designing the chatbot around how the bank organized information, I wanted to understand how customers naturally described their problems. I analyzed customer inquiries, support patterns, and conversational behavior to identify:</p>
+      <div class="card-list">
+        <div><h4>User intent</h4><p>What is the user actually trying to accomplish?</p></div>
+        <div><h4>Language variations</h4><p>How many different ways can users express the same intent?</p></div>
+        <div><h4>Failure patterns</h4><p>Where does the model misunderstand or return irrelevant answers?</p></div>
+        <div><h4>Next action</h4><p>Does the user only need information, or want to complete a banking task?</p></div>
+      </div>
+      <p>These insights became the foundation of the chatbot's conversation architecture and AI quality strategy.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">05</p>
+      <h2>Designing the AI experience</h2>
+      <p>Financial chatbots often sounded technical and distant. I helped define a chatbot persona based on LINE Bank's familiar bear character &mdash; friendly, approachable, and intentionally designed to explain financial concepts as if speaking to someone without a financial background. I also studied financial products and obtained financial certifications so I could translate regulated information into language that stayed accurate while being easier to understand.</p>
+      <p class="pull-quote">Accurate doesn't have to mean complicated.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">06</p>
+      <h2>Improving AI quality — From user questions to the right answer</h2>
+      <p>One of my largest responsibilities was improving the chatbot's NLU performance. I analyzed 10,000+ customer inquiries and worked with our AI systems to identify where user questions failed to map to the correct response, then labeled questions by intent and entity, added synonyms and alternative phrasings, grouped related questions into structured parent/child nodes, created clarification flows for ambiguous intent, and continuously evaluated production conversations after launch.</p>
+      <div class="flow"><span>User query</span><em>&rarr;</em><span>Intent detection</span><em>&rarr;</em><span>Response</span><em>&rarr;</em><span>Evaluation</span><em>&rarr;</em><span>Error analysis</span><em>&rarr;</em><span>Retraining</span></div>
+      <p>Result: <strong>90% NLU accuracy.</strong> More importantly, quality became something we could measure and continuously improve, rather than relying only on subjective judgment.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">07</p>
+      <h2>Designing beyond answers — Turning conversations into actions</h2>
+      <p>I didn't want the chatbot to become another FAQ. For many questions, the real user need was not "tell me how to do this" but "help me do this now." I worked with engineering to integrate 3,000+ API links/actions across 1,000+ chatbot dialogues, connecting conversations directly with relevant banking workflows.</p>
+      <div class="flow"><span>Answer</span><em>&rarr;</em><span>Clarify</span><em>&rarr;</em><span>Take action</span><em>&rarr;</em><span>Escalate</span></div>
+      <p>Users could move directly from a conversation into banking functionality instead of searching through the app themselves.</p>
+      <div class="case-img">+ add conversation flow / wireframe</div>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">08</p>
+      <h2>Human + AI handoff — Knowing when AI should not answer</h2>
+      <p>Not every banking problem should be solved by AI. For complex, sensitive, or unresolved questions, I designed escalation paths connecting users directly to LINE Chat customer service, phone customer service, video customer service, and relevant LINE Bank app workflows.</p>
+      <p class="pull-quote">A good AI experience is not about answering every question. It is about knowing what the user needs next.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">09</p>
+      <h2>Testing &amp; launch — Building confidence before launch</h2>
+      <p>Because the chatbot handled financial information and banking workflows, reliability was critical. I planned and coordinated 700+ SIT, UAT and stress test cases in Jira, covering intent recognition, response accuracy, API behavior, edge cases, customer-service handoffs, high-volume traffic, and end-to-end banking journeys. Issues were documented, prioritized, and reviewed with engineering before release &mdash; helping ensure stable 24/7 availability at launch.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">10</p>
+      <h2>Post-launch optimization — Finding a problem hidden in the data</h2>
+      <p>Launching was only the beginning. After launch, I analyzed chatbot behavior using SQL and discovered that roughly 20% of customer inquiries were related to card delivery status. This wasn't originally designed as a core chatbot feature, but the data showed it was creating significant customer-service demand.</p>
+      <p>I worked across engineering, legal, information security, our postal API partner, and customer service to determine what information could safely be surfaced and how users could verify their identity. We then launched a self-service card tracking experience inside the chatbot, turning a recurring support problem into a scalable self-service workflow.</p>
+    </div>
+
+    <div class="case-section">
+      <p class="case-section__num">11</p>
+      <h2>Impact</h2>
+      <div class="card-list" style="grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); display:grid;">
+        <div><h4>6M+</h4><p>Users served</p></div>
+        <div><h4>5M+</h4><p>Chatbot conversations</p></div>
+        <div><h4>90%</h4><p>NLU accuracy</p></div>
+        <div><h4>60%</h4><p>Reduction in inbound support calls</p></div>
+        <div><h4>$100K</h4><p>Estimated annual operational savings</p></div>
+        <div><h4>3,000+</h4><p>API integrations/actions</p></div>
+        <div><h4>1,000+</h4><p>Conversation flows</p></div>
+        <div><h4>700+</h4><p>SIT, UAT &amp; stress test cases</p></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="reflection">
+    <h2>What I learned — AI quality is a product problem, not only a model problem</h2>
+    <p>Initially, I focused heavily on improving model accuracy. But a technically correct answer does not automatically create a good experience. Quality also depends on:</p>
+    <ol>
+      <li><strong>Relevance</strong> &mdash; did we understand what the user actually wanted?</li>
+      <li><strong>Clarity</strong> &mdash; can the user understand the answer?</li>
+      <li><strong>Actionability</strong> &mdash; can they complete the next step?</li>
+      <li><strong>Trust</strong> &mdash; is the answer reliable enough for a sensitive financial context?</li>
+      <li><strong>Fallback</strong> &mdash; what happens when AI cannot confidently solve the problem?</li>
+    </ol>
+    <p>Building AI requires a continuous loop between model behavior, user behavior, evaluation, and product design. That mindset continues to shape how I approach AI products today.</p>
+  </div>
+
+  <div class="case-nav-next">
+    <span>Next case study</span>
+    <a href="shopbop.html">Amazon Shopbop &rarr;</a>
+  </div>
+
+</main>
+
+<footer class="footer"><span>&copy; 2026 Chelsie Lin</span></footer>
+<script src="../script.js"></script>
+</body>
+</html>
