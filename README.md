@@ -23,8 +23,12 @@ projects/
 4. Your site is live within a minute or two at the URL from step 1.
 5. Any time you edit a file and push again, the live site updates automatically within about a minute — no rebuild step.
 
+## Before you deploy
+- **Calendly**: the Contact section links to `https://calendly.com/your-username` — swap in your real Calendly link.
+- **Email**: contact links use `chels.inmadison@gmail.com` — update if that changes.
+
 ## Photos
-Your headshot (`assets/chelsie-photo.jpg`) is already wired into the homepage hero banner and the About section circle photo — that part is done.
+Your headshot (`assets/chelsie-photo.jpg`) is wired into the homepage hero banner. The About section now has three photo slots (for your graduation photo, etc.) and the Background section has one more — all still placeholders for you to fill in.
 
 The project case study pages still use placeholder boxes (a light icon on a tinted background) wherever a real screenshot should go, because I can't fetch or generate your actual product screenshots. To swap one in:
 - Find the `<div class="case-img">...</div>` in a project's HTML file (or `<div class="case-hero__media">...</div>` near the top).
