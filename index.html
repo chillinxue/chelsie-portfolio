@@ -1,248 +1,362 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chelsie Lin — Product Manager & UX Designer</title>
-<meta name="description" content="Chelsie Lin — Product Manager, UX Designer and Front-end Engineer. AI fintech, UX research and web development case studies.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Chelsie Lin — Product Manager & UX Designer</title>
+        <meta
+            name="description"
+            content="Chelsie Lin — Product Manager, UX Designer and Front-end Engineer. AI fintech, UX research and web development case studies."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="nav" id="nav">
+            <a href="#top" class="nav__logo">Chelsie Lin</a>
+            <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav__links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+                <a href="#contact" class="nav__cta">CONTACT ME</a>
+            </nav>
+        </header>
 
-<header class="nav" id="nav">
-  <a href="#top" class="nav__logo">Chelsie Lin</a>
-  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-  <nav class="nav__links" id="navLinks">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-    <a href="#contact" class="nav__cta">CONTACT ME</a>
-  </nav>
-</header>
+        <main>
+            <section class="hero" id="top">
+                <div class="hero__inner">
+                    <div class="hero__photo"><img src="assets/chelsie-photo.jpg" alt="Chelsie Lin" /></div>
+                    <div>
+                        <p class="hero__eyebrow">Product &middot; UX &middot; Front-end Portfolio</p>
+                        <h1 class="hero__name">Chelsie Lin</h1>
+                        <p class="hero__tagline">
+                            Product Manager, UX Designer and Front-end Engineer building AI and consumer products end to
+                            end.
+                        </p>
+                        <a class="hero__cta hero__cta--outline" href="#projects">See my work &rarr;</a>
+                        <div class="hero__social">
+                            <a href="mailto:chels.inmadison@gmail.com">Email</a>
+                            <a href="https://www.linkedin.com/in/chelsielin/" target="_blank" rel="noopener"
+                                >LinkedIn</a
+                            >
+                            <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<main>
+            <div class="marquee" aria-hidden="true">
+                <div class="marquee__track">
+                    <span>Fintech AI</span><span class="dot">&#10022;</span> <span>UX Research</span
+                    ><span class="dot">&#10022;</span> <span>Product Strategy</span><span class="dot">&#10022;</span>
+                    <span>Front-end Development</span><span class="dot">&#10022;</span> <span>Fintech AI</span
+                    ><span class="dot">&#10022;</span> <span>UX Research</span><span class="dot">&#10022;</span>
+                    <span>Product Strategy</span><span class="dot">&#10022;</span> <span>Front-end Development</span
+                    ><span class="dot">&#10022;</span>
+                </div>
+            </div>
 
-  <section class="hero" id="top">
-    <div class="hero__inner">
-      <div class="hero__photo"><img src="assets/chelsie-photo.jpg" alt="Chelsie Lin"></div>
-      <div>
-        <p class="hero__eyebrow">Product &middot; UX &middot; Front-end Portfolio</p>
-        <h1 class="hero__name">Chelsie Lin</h1>
-        <p class="hero__tagline">Product Manager, UX Designer and Front-end Engineer building AI and consumer products end to end.</p>
-        <a class="hero__cta hero__cta--outline" href="#projects">See my work &rarr;</a>
-        <div class="hero__social">
-          <a href="mailto:chels.inmadison@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/chelsielin/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-        </div>
-      </div>
-    </div>
-  </section>
+            <section class="projects" id="projects">
+                <h2>Selected work</h2>
 
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <span>Fintech AI</span><span class="dot">&#10022;</span>
-      <span>UX Research</span><span class="dot">&#10022;</span>
-      <span>Product Strategy</span><span class="dot">&#10022;</span>
-      <span>Front-end Development</span><span class="dot">&#10022;</span>
-      <span>Fintech AI</span><span class="dot">&#10022;</span>
-      <span>UX Research</span><span class="dot">&#10022;</span>
-      <span>Product Strategy</span><span class="dot">&#10022;</span>
-      <span>Front-end Development</span><span class="dot">&#10022;</span>
-    </div>
-  </div>
+                <p class="tier-label">Featured work</p>
+                <div class="featured-grid">
+                    <a class="panel" href="projects/line-bank.html">
+                        <div class="panel__media">
+                            <img class="case-img" src="assets/line-bank-cover.jpg" alt="LINE Bank AI Chatbot" />
+                        </div>
+                        <div class="panel__body">
+                            <span class="panel__role">Fintech AI &middot; Product Manager</span>
+                            <h3>LINE Bank AI Chatbot</h3>
+                            <p>
+                                Owned a financial chatbot from 0&rarr;1 to 6M+ users at Taiwan's largest virtual bank.
+                            </p>
+                        </div>
+                        <span class="panel__impact"
+                            ><span class="panel__impact-text">6M+ users &middot; 90% NLU accuracy</span></span
+                        >
+                    </a>
 
-  <section class="projects" id="projects">
-    <h2>Selected work</h2>
+                    <a class="panel" href="projects/shopbop.html">
+                        <div class="panel__media">
+                            <img class="case-img" src="assets/shopbop-cover.jpg" alt="Amazon Shopbop" />
+                        </div>
+                        <div class="panel__body">
+                            <span class="panel__role">Product Manager + UX Designer</span>
+                            <h3>Amazon Shopbop</h3>
+                            <p>
+                                Personalized outfit discovery &mdash; product strategy, research and prototyping with
+                                Amazon mentors.
+                            </p>
+                        </div>
+                        <span class="panel__impact"
+                            ><span class="panel__impact-text">0&rarr;1 concept &rarr; validated prototype</span></span
+                        >
+                    </a>
 
-    <p class="tier-label">Featured work</p>
-    <div class="featured-grid">
+                    <a class="panel" href="projects/library.html">
+                        <div class="panel__media">
+                            <img class="case-img" src="assets/library-cover.jpg" alt="Madison Public Library" />
+                        </div>
+                        <div class="panel__body">
+                            <span class="panel__role">UX Designer</span>
+                            <h3>Madison Public Library</h3>
+                            <p>Redesigned the end-to-end journey from book discovery to borrowing and management.</p>
+                        </div>
+                        <span class="panel__impact"
+                            ><span class="panel__impact-text">1st place &middot; 3 journeys redesigned</span></span
+                        >
+                    </a>
 
-      <a class="panel" href="projects/line-bank.html">
-        <div class="panel__media"><div class="case-img">+ add project image</div></div>
-        <div class="panel__body">
-          <span class="panel__role">Fintech AI &middot; Product Manager</span>
-          <h3>LINE Bank AI Chatbot</h3>
-          <p>Owned a financial chatbot from 0&rarr;1 to 6M+ users at Taiwan's largest virtual bank.</p>
-        </div>
-        <span class="panel__impact"><span class="panel__impact-text">6M+ users &middot; 90% NLU accuracy</span></span>
-      </a>
+                    <a class="panel" href="projects/ascenzi.html">
+                        <div class="panel__media">
+                            <img class="case-img" src="assets/ascenzi-cover.jpg" alt="Ascenzi & Associates" />
+                        </div>
+                        <div class="panel__body">
+                            <span class="panel__role">Product Manager</span>
+                            <h3>Ascenzi &amp; Associates</h3>
+                            <p>
+                                A 0&rarr;1 B2B website for companies entering the U.S. manufacturing market &mdash;
+                                research to launch.
+                            </p>
+                        </div>
+                        <span class="panel__impact"
+                            ><span class="panel__impact-text">Concept &rarr; live product, current work</span></span
+                        >
+                    </a>
 
-      <a class="panel" href="projects/shopbop.html">
-        <div class="panel__media"><div class="case-img">+ add project image</div></div>
-        <div class="panel__body">
-          <span class="panel__role">Product Manager + UX Designer</span>
-          <h3>Amazon Shopbop</h3>
-          <p>Personalized outfit discovery &mdash; product strategy, research and prototyping with Amazon mentors.</p>
-        </div>
-        <span class="panel__impact"><span class="panel__impact-text">0&rarr;1 concept &rarr; validated prototype</span></span>
-      </a>
+                    <a class="panel" href="projects/hanabi.html">
+                        <div class="panel__media">
+                            <img class="case-img" src="assets/hanabi-cover.jpg" alt="HANABI Travel Planner" />
+                        </div>
+                        <div class="panel__body">
+                            <span class="panel__role">Frontend Developer</span>
+                            <h3>HANABI Travel Planner</h3>
+                            <p>
+                                Designed and personally built an end-to-end travel planner with React, Firebase and
+                                Google Maps.
+                            </p>
+                        </div>
+                        <span class="panel__impact"
+                            ><span class="panel__impact-text"
+                                >Solo build &middot; concept to launch in 5 weeks</span
+                            ></span
+                        >
+                    </a>
+                </div>
 
-      <a class="panel" href="projects/library.html">
-        <div class="panel__media"><div class="case-img">+ add project image</div></div>
-        <div class="panel__body">
-          <span class="panel__role">UX Designer</span>
-          <h3>Madison Public Library</h3>
-          <p>Redesigned the end-to-end journey from book discovery to borrowing and management.</p>
-        </div>
-        <span class="panel__impact"><span class="panel__impact-text">1st place &middot; 3 journeys redesigned</span></span>
-      </a>
+                <p class="tier-label">Selected projects</p>
+                <div class="selected-grid">
+                    <a class="mini-card" href="projects/mental-health.html">
+                        <div class="mini-card__media">
+                            <img
+                                class="case-img"
+                                src="assets/mental-health-cover.jpg"
+                                alt="AI Mental Health Research"
+                            />
+                        </div>
+                        <div class="mini-card__body">
+                            <span class="mini-card__role">UX Researcher</span>
+                            <h3>AI Mental Health Research</h3>
+                            <p>How international grad students think about trust, privacy, and AI-powered support.</p>
+                        </div>
+                    </a>
 
-      <a class="panel" href="projects/ascenzi.html">
-        <div class="panel__media"><div class="case-img">+ add project image</div></div>
-        <div class="panel__body">
-          <span class="panel__role">Product Manager</span>
-          <h3>Ascenzi &amp; Associates</h3>
-          <p>A 0&rarr;1 B2B website for companies entering the U.S. manufacturing market &mdash; research to launch.</p>
-        </div>
-        <span class="panel__impact"><span class="panel__impact-text">Concept &rarr; live product, current work</span></span>
-      </a>
+                    <a class="mini-card" href="projects/stylish.html">
+                        <div class="mini-card__media">
+                            <img class="case-img" src="assets/stylish-cover.jpg" alt="STYLiSH E-commerce" />
+                        </div>
+                        <div class="mini-card__body">
+                            <span class="mini-card__role">Frontend Developer</span>
+                            <h3>STYLiSH E-commerce</h3>
+                            <p>A full clothing e-commerce platform built from scratch in a four-week sprint.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
-      <a class="panel" href="projects/hanabi.html">
-        <div class="panel__media"><div class="case-img">+ add project image</div></div>
-        <div class="panel__body">
-          <span class="panel__role">Frontend Developer</span>
-          <h3>HANABI Travel Planner</h3>
-          <p>Designed and personally built an end-to-end travel planner with React, Firebase and Google Maps.</p>
-        </div>
-        <span class="panel__impact"><span class="panel__impact-text">Solo build &middot; concept to launch in 5 weeks</span></span>
-      </a>
+            <section class="about" id="about">
+                <h2>About me</h2>
+                <div class="about__grid">
+                    <div class="about__gallery">
+                        <figure>
+                            <img
+                                class="case-img"
+                                src="assets/about-grad-1.jpg"
+                                alt="Chelsie Lin at UW-Madison graduation"
+                            />
+                            <figcaption>The day I earned my Master's degree</figcaption>
+                        </figure>
+                        <figure>
+                            <img
+                                class="case-img"
+                                src="assets/about-linebank-team.jpg"
+                                alt="LINE Bank chatbot launch team"
+                            />
+                            <figcaption>LINE Bank official launch</figcaption>
+                        </figure>
+                        <figure>
+                            <img
+                                class="case-img"
+                                src="assets/about-speech.jpg"
+                                alt="Chelsie Lin presenting in a college class"
+                            />
+                            <figcaption>Speech in a college class</figcaption>
+                        </figure>
+                    </div>
+                    <div class="about__text">
+                        <p>
+                            I'm a Product Manager and UX Designer currently earning my MS in Information at
+                            UW&ndash;Madison. Before graduate school, I spent four years building AI-driven fintech
+                            products in Taiwan &mdash; owning the launch of a financial chatbot that now handles
+                            millions of conversations for the country's largest virtual bank.
+                        </p>
+                        <p>
+                            I care about products that make people's lives measurably easier. That means grounding every
+                            decision in user research and data, then staying close enough to the front end to know
+                            what's actually feasible to build.
+                        </p>
+                        <div class="about__stats">
+                            <div class="stat">
+                                <span class="stat__num">4</span
+                                ><span class="stat__label">years in product management</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__num">6M+</span
+                                ><span class="stat__label">users served by a chatbot I launched</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__num">1.1M</span
+                                ><span class="stat__label">account openings driven</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__num">$100K</span
+                                ><span class="stat__label">in annual support cost savings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    </div>
+            <section class="background" id="background">
+                <h2>Background</h2>
+                <div class="background__grid">
+                    <div class="background__photo-col">
+                        <img
+                            class="case-img background__photo"
+                            src="assets/background-photo.jpg"
+                            alt="Chelsie Lin at Camp Randall Stadium"
+                        />
+                        <blockquote class="background__quote">
+                            &ldquo;Do one thing every day that scares you.&rdquo;<cite>&mdash; Eleanor Roosevelt</cite>
+                        </blockquote>
+                    </div>
 
-    <p class="tier-label">Selected projects</p>
-    <div class="selected-grid">
+                    <div class="background__skills">
+                        <h3>Skills &amp; Tools</h3>
+                        <div class="pills">
+                            <span class="pill">Product Strategy</span>
+                            <span class="pill">UX Research</span>
+                            <span class="pill">Roadmap Planning</span>
+                            <span class="pill">PRD Writing</span>
+                            <span class="pill">Front-end Development</span>
+                            <span class="pill">Python</span>
+                            <span class="pill">SQL</span>
+                            <span class="pill">Figma</span>
+                            <span class="pill">React</span>
+                            <span class="pill">Firebase</span>
+                            <span class="pill">GA &amp; UTM</span>
+                            <span class="pill">Jira</span>
+                            <span class="pill">Agile / Scrum</span>
+                            <span class="pill">A/B Testing</span>
+                        </div>
+                    </div>
 
-      <a class="mini-card" href="projects/mental-health.html">
-        <div class="mini-card__media"><div class="case-img">+ add photo</div></div>
-        <div class="mini-card__body">
-          <span class="mini-card__role">UX Researcher</span>
-          <h3>AI Mental Health Research</h3>
-          <p>How international grad students think about trust, privacy, and AI-powered support.</p>
-        </div>
-      </a>
+                    <div class="background__history">
+                        <div class="background__history-head">
+                            <h3>Academics</h3>
+                            <a href="resume.pdf" target="_blank" rel="noopener" class="view-resume"
+                                >View resume &rarr;</a
+                            >
+                        </div>
+                        <ul class="bg-compact">
+                            <li>
+                                <p class="bg-compact__title">
+                                    <strong>MS in Information</strong> &middot; University of Wisconsin&ndash;Madison
+                                </p>
+                                <p class="bg-compact__meta">
+                                    Sep 2024 &ndash; May 2026 &middot; GPA 3.86, UX research and design methods
+                                </p>
+                            </li>
+                        </ul>
 
-      <a class="mini-card" href="projects/stylish.html">
-        <div class="mini-card__media"><div class="case-img">+ add photo</div></div>
-        <div class="mini-card__body">
-          <span class="mini-card__role">Frontend Developer</span>
-          <h3>STYLiSH E-commerce</h3>
-          <p>A full clothing e-commerce platform built from scratch in a four-week sprint.</p>
-        </div>
-      </a>
+                        <h3>Work Experience</h3>
+                        <ul class="bg-compact">
+                            <li>
+                                <p class="bg-compact__title">
+                                    <strong>Web Product Manager</strong> &middot; Ascenzi &amp; Associates
+                                </p>
+                                <p class="bg-compact__meta">Aug 2026&ndash;Present</p>
+                                <p class="bg-compact__desc">
+                                    Leading website development from market research to launch.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="bg-compact__title">
+                                    <strong>Product Manager Intern</strong> &middot; WoafMeow AI
+                                </p>
+                                <p class="bg-compact__meta">May&ndash;Aug 2025</p>
+                                <p class="bg-compact__desc">
+                                    Defined product strategy for an LLM-powered veterinary AI platform.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="bg-compact__title">
+                                    <strong>Chatbot Product Manager</strong> &middot; LINE Bank
+                                </p>
+                                <p class="bg-compact__meta">Jan 2020&ndash;Apr 2022</p>
+                                <p class="bg-compact__desc">
+                                    Owned the end-to-end launch of an AI financial chatbot serving 6M+ subscribers.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="bg-compact__title">
+                                    <strong>Front-End Developer</strong> &middot; AppWorks School
+                                </p>
+                                <p class="bg-compact__meta">Oct 2022&ndash;Jun 2023</p>
+                                <p class="bg-compact__desc">
+                                    Built and launched a travel planning platform within a four-week Scrum sprint.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-    </div>
-  </section>
+            <section class="contact" id="contact">
+                <h2>Let's talk</h2>
+                <p>Open to Product Manager and UX Designer roles &mdash; reach out any time.</p>
+                <div class="contact__grid">
+                    <a href="https://www.linkedin.com/in/chelsielin/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:chels.inmadison@gmail.com">Email</a>
+                    <a href="https://calendly.com/your-username" target="_blank" rel="noopener">Calendly</a>
+                </div>
+                <a class="contact__email-line" href="mailto:chels.inmadison@gmail.com">chels.inmadison@gmail.com</a>
+            </section>
+        </main>
 
-  <section class="about" id="about">
-    <h2>About me</h2>
-    <div class="about__grid">
-      <div class="about__gallery">
-        <div class="case-img">+ add graduation photo</div>
-        <div class="case-img">+ add photo</div>
-        <div class="case-img">+ add photo</div>
-      </div>
-      <div class="about__text">
-        <p>I'm a Product Manager and UX Designer currently earning my MS in Information at UW&ndash;Madison. Before graduate school, I spent four years building AI-driven fintech products in Taiwan &mdash; owning the launch of a financial chatbot that now handles millions of conversations for the country's largest virtual bank.</p>
-        <p>I care about products that make people's lives measurably easier. That means grounding every decision in user research and data, then staying close enough to the front end to know what's actually feasible to build.</p>
-        <div class="about__stats">
-          <div class="stat"><span class="stat__num">4</span><span class="stat__label">years in product management</span></div>
-          <div class="stat"><span class="stat__num">6M+</span><span class="stat__label">users served by a chatbot I launched</span></div>
-          <div class="stat"><span class="stat__num">1.1M</span><span class="stat__label">account openings driven</span></div>
-          <div class="stat"><span class="stat__num">$100K</span><span class="stat__label">in annual support cost savings</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <footer class="footer">
+            <span>&copy; 2026 Chelsie Lin</span>
+        </footer>
 
-  <section class="background" id="background">
-    <h2>Background</h2>
-    <div class="background__grid">
-
-      <div class="case-img background__photo">+ add photo</div>
-
-      <div class="background__skills">
-        <h3>Skills &amp; Tools</h3>
-        <div class="pills">
-          <span class="pill">Product Strategy</span>
-          <span class="pill">UX Research</span>
-          <span class="pill">Roadmap Planning</span>
-          <span class="pill">PRD Writing</span>
-          <span class="pill">Front-end Development</span>
-          <span class="pill">Python</span>
-          <span class="pill">SQL</span>
-          <span class="pill">Figma</span>
-          <span class="pill">React</span>
-          <span class="pill">Firebase</span>
-          <span class="pill">GA &amp; UTM</span>
-          <span class="pill">Jira</span>
-          <span class="pill">Agile / Scrum</span>
-          <span class="pill">A/B Testing</span>
-        </div>
-      </div>
-
-      <div class="background__history">
-        <div class="background__history-head">
-          <h3>Academics</h3>
-          <a href="resume.pdf" target="_blank" rel="noopener" class="view-resume">View resume &rarr;</a>
-        </div>
-        <ul class="bg-compact">
-          <li>
-            <p class="bg-compact__title"><strong>MS in Information</strong> &middot; University of Wisconsin&ndash;Madison</p>
-            <p class="bg-compact__meta">Sep 2024 &ndash; May 2026 &middot; GPA 3.86, UX research and design methods</p>
-          </li>
-        </ul>
-
-        <h3>Work Experience</h3>
-        <ul class="bg-compact">
-          <li>
-            <p class="bg-compact__title"><strong>Web Product Manager</strong> &middot; Ascenzi &amp; Associates</p>
-            <p class="bg-compact__meta">Aug 2026&ndash;Present</p>
-            <p class="bg-compact__desc">Leading website development from market research to launch.</p>
-          </li>
-          <li>
-            <p class="bg-compact__title"><strong>Product Manager Intern</strong> &middot; WoafMeow AI</p>
-            <p class="bg-compact__meta">May&ndash;Aug 2025</p>
-            <p class="bg-compact__desc">Defined product strategy for an LLM-powered veterinary AI platform.</p>
-          </li>
-          <li>
-            <p class="bg-compact__title"><strong>Chatbot Product Manager</strong> &middot; LINE Bank</p>
-            <p class="bg-compact__meta">Jan 2020&ndash;Apr 2022</p>
-            <p class="bg-compact__desc">Owned the end-to-end launch of an AI financial chatbot serving 6M+ subscribers.</p>
-          </li>
-          <li>
-            <p class="bg-compact__title"><strong>Front-End Developer</strong> &middot; AppWorks School</p>
-            <p class="bg-compact__meta">Oct 2022&ndash;Jun 2023</p>
-            <p class="bg-compact__desc">Built and launched a travel planning platform within a four-week Scrum sprint.</p>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Let's talk</h2>
-    <p>Open to Product Manager and UX Designer roles &mdash; reach out any time.</p>
-    <div class="contact__grid">
-      <a href="https://www.linkedin.com/in/chelsielin/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:chels.inmadison@gmail.com">Email</a>
-      <a href="https://calendly.com/your-username" target="_blank" rel="noopener">Calendly</a>
-    </div>
-    <a class="contact__email-line" href="mailto:chels.inmadison@gmail.com">chels.inmadison@gmail.com</a>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <span>&copy; 2026 Chelsie Lin</span>
-</footer>
-
-<script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

@@ -236,16 +236,34 @@ h2 {
 .about__gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 14px 12px;
+    align-items: start;
 }
-.about__gallery .case-img:first-child {
+.about__gallery figure {
+    margin: 0;
+}
+.about__gallery figure:first-child {
     grid-column: 1 / -1;
-    aspect-ratio: 16/10;
 }
 .about__gallery .case-img {
-    aspect-ratio: 1/1;
     min-height: 0;
     margin: 0;
+}
+.about__gallery figure:first-child .case-img {
+    aspect-ratio: 1477/1108;
+}
+.about__gallery figure:nth-child(2) .case-img,
+.about__gallery figure:nth-child(3) .case-img {
+    aspect-ratio: 1478/1108;
+    object-fit: cover;
+    padding: 0;
+}
+.about__gallery figcaption {
+    font-size: 11px;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin-top: 6px;
+    text-align: center;
 }
 .about__stats {
     display: grid;
@@ -308,7 +326,7 @@ h2 {
     transform: translateY(-3px);
 }
 .panel__media .case-img {
-    aspect-ratio: 16/10;
+    aspect-ratio: 1387/804;
     min-height: 0;
     margin: 0;
     border-radius: 0;
@@ -365,6 +383,7 @@ h2 {
 }
 .mini-card {
     display: flex;
+    align-items: flex-start;
     gap: 14px;
     background: var(--paper);
     border: 1px solid var(--border);
@@ -377,10 +396,10 @@ h2 {
 }
 .mini-card__media {
     flex-shrink: 0;
-    width: 92px;
+    width: 128px;
 }
 .mini-card__media .case-img {
-    aspect-ratio: 1/1;
+    aspect-ratio: 1276/906;
     min-height: 0;
     margin: 0;
 }
@@ -417,10 +436,33 @@ h2 {
     gap: 36px;
     align-items: start;
 }
+.background__photo-col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 .background__photo.case-img {
-    aspect-ratio: 4/5;
+    aspect-ratio: 1108/1477;
     min-height: 0;
     margin: 0;
+}
+.background__quote {
+    margin: 0;
+    padding: 0;
+    font-family: var(--display);
+    font-size: 14px;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.4;
+    border: none;
+}
+.background__quote cite {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--sans);
+    font-style: normal;
+    font-size: 11.5px;
+    color: var(--ink-soft);
 }
 .background__skills h3,
 .background__history h3 {
@@ -554,9 +596,10 @@ h2 {
 img.case-img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding: 0;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    padding: 6px;
 }
 .case-img::before {
     content: '';
@@ -593,7 +636,7 @@ img.case-img {
     padding-bottom: 48px;
 }
 .case-hero__media .case-img {
-    aspect-ratio: 4/3;
+    aspect-ratio: 1387/804;
     min-height: 0;
     margin: 0;
 }
@@ -816,8 +859,10 @@ img.case-img {
     .background__grid {
         grid-template-columns: 1fr 1fr;
     }
-    .background__photo.case-img {
+    .background__photo-col {
         grid-column: 1 / -1;
+    }
+    .background__photo.case-img {
         aspect-ratio: 16/9;
     }
     .case-hero__grid {
