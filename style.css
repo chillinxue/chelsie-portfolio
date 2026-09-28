@@ -377,35 +377,35 @@ h2 {
 
 .selected-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 18px;
     margin-top: 32px;
 }
 .mini-card {
     display: flex;
-    align-items: flex-start;
-    gap: 14px;
+    flex-direction: column;
     background: var(--paper);
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 14px;
-    transition: border-color 0.15s ease;
+    overflow: hidden;
+    transition:
+        transform 0.15s ease,
+        border-color 0.15s ease;
 }
 .mini-card:hover {
+    transform: translateY(-3px);
     border-color: var(--ink);
 }
-.mini-card__media {
-    flex-shrink: 0;
-    width: 128px;
-}
 .mini-card__media .case-img {
-    aspect-ratio: 1276/906;
+    aspect-ratio: 1387/804;
     min-height: 0;
     margin: 0;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--border);
 }
 .mini-card__body {
-    flex: 1;
-    min-width: 0;
+    padding: 16px 18px 18px;
 }
 .mini-card__role {
     display: inline-block;
@@ -415,14 +415,18 @@ h2 {
     background: var(--blue);
     padding: 3px 10px;
     border-radius: 999px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .mini-card h3 {
-    font-size: 15.5px;
-    margin-bottom: 4px;
+    font-size: 16.5px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .mini-card p {
-    font-size: 12.5px;
+    font-size: 13px;
     margin: 0;
 }
 
@@ -875,9 +879,6 @@ img.case-img {
 @media (max-width: 600px) {
     .background__grid {
         grid-template-columns: 1fr;
-    }
-    .mini-card {
-        flex-direction: row;
     }
 }
 @media (max-width: 640px) {
